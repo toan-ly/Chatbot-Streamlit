@@ -1,63 +1,63 @@
 import streamlit as st
 
-# st.title("MY PROJECT")
-# st.header("This is a header")
-# st.subheader("This is a subheader")
-# st.caption("This is a caption")
-# st.text("I love AI VIET NAM")
+st.title("MY PROJECT")
+st.header("This is a header")
+st.subheader("This is a subheader")
+st.caption("This is a caption")
+st.text("This is a text")
 
-# st.divider()
+st.divider()
 
-# st.markdown("# Heading 1")
-# st.markdown("[AI VIET NAM](https://aivietnam.edu.vn/)")
-# st.markdown("""
-#     1. Machine Learning
-#     2. Deep Learning""")
-# st.markdown(r"$\sqrt{2x+2}$")
-# st.latex(r"\sqrt{2x+2}")
+st.markdown("# Heading 1")
+st.markdown("[AI VIET NAM](https://aivietnam.edu.vn/)")
+st.markdown("""
+    1. Machine Learning
+    2. Deep Learning""")
+st.markdown(r"$\sqrt{2x+2}$")
+st.latex(r"\sqrt{2x+2}")
 
-# st.divider()
+st.divider()
 
-# st.write('I love AI VIET NAM')
-# st.write('## Heading 2')
-# st.write(r'$ \sqrt{2x+2} $')
-# st.write('1 + 1 = ', 2)
+st.write('I love AI VIET NAM')
+st.write('## Heading 2')
+st.write(r'$ \sqrt{2x+2} $')
+st.write('1 + 1 = ', 2)
 
-# st.divider()
+st.divider()
 
-# st.code("""
-#     import torch
-#     data = torch.Tensor([1, 2, 3])
-#     print(data)
-# """, language="python")
+st.code("""
+    import torch
+    data = torch.Tensor([1, 2, 3])
+    print(data)
+""", language="python")
 
-# def get_user_name():
-#     return 'Thai'
-# with st.echo():
-#     st.write('This code will be printed')
-#     def get_email():
-#         return 'thai@gmail.com'
-#     user_name = get_user_name()
-#     email = get_email()
-#     st.write(user_name, email)
+def get_user_name():
+    return 'Toan'
+with st.echo():
+    st.write('This code will be printed')
+    def get_email():
+        return 'hello@world'
+    user_name = get_user_name()
+    email = get_email()
+    st.write(user_name, email)
 
-# st.divider()
+st.divider()
 
-st.logo('./logo.png')
+# st.logo('./data/logo.png')
 
-# st.image(
-#     './dogs.jpeg',
-#     caption='Funny dogs.'
-# )
+st.image(
+    './data/dogs.jpeg',
+    caption='Funny dogs.'
+)
 
-# st.audio('./audio.mp4')
+st.audio('./data/audio.mp4')
 
-# st.video('./video.mp4')
+st.video('./data/video.mp4')
 
-# st.divider()
+st.divider()
 
 def get_name():
-    st.write("Thai")
+    st.write("Toan")
 agree = st.checkbox("I agree",on_change=get_name)
 if agree:
     st.write("Great!")
@@ -103,12 +103,12 @@ title = st.text_input(
 )
 st.write("The current movie title is", title)
 
-# st.divider()
+st.divider()
 
-# messages = st.container(height=200)
-# if prompt := st.chat_input("Say something"):
-#     messages.chat_message("user").write(prompt)
-#     messages.chat_message("assistant").write(f"Echo: {prompt}")
+messages = st.container(height=200)
+if prompt := st.chat_input("Say something"):
+    messages.chat_message("user").write(prompt)
+    messages.chat_message("assistant").write(f"Echo: {prompt}")
 
 
 st.divider()
