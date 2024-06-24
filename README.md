@@ -22,29 +22,29 @@ This project focuses on the practical implementation of AI applications using St
 To run these applications locally, follow these steps:
 
 1. Clone this repository:
-  ```bash
-  git clone https://github.com/toan-ly/Chatbot-Streamlit.git
-  cd Chatbot-Streamlit/source
-  ```
+```bash
+git clone https://github.com/toan-ly/Chatbot-Streamlit.git
+cd Chatbot-Streamlit/source
+```
 
 2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 3. Run the applications using Streamlit:
-   - For Word Correction:
-     ```bash
-     streamlit run levenshtein_distance.py
-     ```
-   - For Object Detection:
-     ```bash
-     streamlit run object_detection.py
-     ```
-   - For Chatbot:
-     ```bash
-     streamlit run chatbot.py
-     ```
+- For Word Correction:
+```bash
+streamlit run levenshtein_distance.py
+```
+- For Object Detection:
+```bash
+streamlit run object_detection.py
+```
+- For Chatbot:
+```bash
+streamlit run chatbot.py
+```
 
 ## Word Correction
 
@@ -53,9 +53,9 @@ The Word Correction application takes a user-inputted word and suggests the corr
 
 ### Usage
 1. Run the application:
-     ```bash
-     streamlit run levenshtein_distance.py
-     ```
+```bash
+streamlit run levenshtein_distance.py
+```
 2. Enter a word in the input box and click "Compute".
 3. The application will display the corrected word and the Levenshtein distances for each word in the vocabulary.
 
@@ -66,9 +66,9 @@ The Object Detection application allows users to upload an image, and it will de
 
 ### Usage
 1. Run the application:
-    ```bash
-    streamlit run object_detection.py
-    ```
+```bash
+streamlit run object_detection.py
+```
 2. Upload an image file.
 3. The application will display the uploaded image with detected objects highlighted.
 
@@ -79,9 +79,9 @@ The Chatbot application provides an interactive chat interface for users. It use
 
 ### Usage
 1. Run the application:
-    ```bash
-    streamlit run chatbot.py
-    ```
+```bash
+streamlit run chatbot.py
+```
 2. Enter your Hugging Face credentials.
 3. Start chatting with the bot.
 
