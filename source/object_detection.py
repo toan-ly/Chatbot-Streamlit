@@ -4,7 +4,7 @@ from PIL import Image
 import streamlit as st
 import os
 
-BASE_DIR = os.getcwd()
+BASE_DIR = os.path.join(os.path.dirname(__file__))
 MODEL = os.path.join(BASE_DIR, "model", "MobileNetSSD_deploy.caffemodel")
 PROTOTXT = os.path.join(BASE_DIR, "model", "MobileNetSSD_deploy.prototxt.txt")
 
