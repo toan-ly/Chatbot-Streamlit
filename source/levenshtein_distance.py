@@ -90,7 +90,6 @@ def compute_distances(word, vocabs, method='bfs'):
 def main():
     BASE_DIR = os.path.join(os.path.dirname(__file__))
     vocabs_file_path = os.path.join(BASE_DIR, 'data', 'vocab.txt')
-    print(vocabs_file_path)
     vocabs = load_vocab(vocabs_file_path)
 
     st.title("Word Correction using Levenshtein Distance")
