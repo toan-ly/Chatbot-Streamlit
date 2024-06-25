@@ -1,5 +1,6 @@
 import streamlit as st
 from utils.timing import timeit
+import os
 
 def levenshtein_distance_dp(token1: str, token2: str) -> int:
     distances = [[0]*(len(token2)+1) for _ in range(len(token1)+1)]
@@ -75,7 +76,6 @@ def load_vocab(file_path):
         lines = f.readlines()
     words = sorted(set([line.strip().lower() for line in lines]))
     return words
-vocabs = load_vocab(file_path='./data/vocab.txt')
 
 @timeit
 def compute_distances(word, vocabs, method='bfs'):
@@ -88,6 +88,11 @@ def compute_distances(word, vocabs, method='bfs'):
     return leven_distances
 
 def main():
+    BASE_DIR = os.path.join(os.path.dirname(__file__))
+    vocabs_file_path = os.path.join(BASE_DIR, 'data', 'vocab.txt')
+    print(vocabs_file_path)
+    vocabs = load_vocab(vocabs_file_path)
+
     st.title("Word Correction using Levenshtein Distance")
     word = st.text_input('Word:')
 
